@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+
+    cursor: default;
+}
+
+/* Header Bar Styling */
+header {
+    background-color: aliceblue;
+    display: flex;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+}
+
+nav li {
+    min-width: 30px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 6px 12px;
+}
+
+nav li:hover {
+    background-color: #B4DCFF;
+    border-color:#B4DCFF;
+}
+
+.logo {
+    font-family: 'Sassy Frass', cursive;
+    font-size: 48px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */     
+}
