@@ -10,9 +10,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: ['stylel-loader', 'css-loader'],
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
+            {
+                test: /\.ttf$/i,
+                type: 'asset/resource',
+            }
         ],
     },
 };

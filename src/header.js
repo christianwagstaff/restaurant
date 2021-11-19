@@ -5,6 +5,7 @@ class Header {
     }
 
     createTabs() {
+        let nav = document.createElement('nav');
         let tabDiv = document.createElement('ul');
         let tabArray = this.tabs;
         for (let tab of tabArray) {
@@ -13,13 +14,21 @@ class Header {
             a.id = `${tab.toLowerCase().replace(' ', '')}Page`;
             tabDiv.appendChild(a);
         }
-        return tabDiv;
+        nav.appendChild(tabDiv);
+        return nav;
+    }
+
+    createLogo(name) {
+        let container = document.createElement('div');
+        container.textContent = name;
+        container.classList.add('logo')
+        return container;
     }
 
     createHeader() {
         let headerDiv = document.createElement('header');
         headerDiv.classList.add('header');
-        headerDiv.innerText = this.title;
+        headerDiv.appendChild(this.createLogo(this.title));
         headerDiv.appendChild(this.createTabs());
 
         return headerDiv;
