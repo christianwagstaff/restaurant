@@ -1,0 +1,38 @@
+{
+    "coffee": [
+        {
+            "name": "Espresso",
+            "price": 1.95
+        },
+        {
+            "name": "Cortado",
+            "price": 3.95
+        },
+        {
+            "name": "Latte",
+            "price": 4.95
+        },
+        {
+            "name": "Capuccino",
+            "price": 4.95
+        },
+        {
+            "name": "Mocha",
+            "price": 4.95
+        }
+    ],
+    "pastries": [
+        {
+            "name": "Bread",
+            "price": 3.95
+        },
+        {
+            "name": "Muffin",
+            "price": 3.95
+        },
+        {
+            "name": "Croissant",
+            "price": 3.95
+        }
+    ]
+}
